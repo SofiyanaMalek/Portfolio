@@ -188,7 +188,7 @@ button:hover {
 }
 
 .circle:nth-child(2) {
-  background-image: url("myimage.jpeg");
+  background-image: url(Logo.jpg);
   width: 30rem;
   background-size: 100%;
   background-repeat: no-repeat;
