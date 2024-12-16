@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Handjet:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 80vh;
+}
+.list__design {
+  padding: 16px;
+  list-style-type: square;
+}
+#main-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+
+  #navlist {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  #navlist li {
+    margin: 0 15px;
+  }
+
+  #navlist a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+
+  #navlist a.active {
+    background-color: #555;
+    border-radius: 5px;
+  }
+
+  body {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  body {
+    margin-top: 50px;
+  }
+
+  /* #navlist li {
+  list-style: none;
+  text-decoration: none;
+  /* position: fixed; */
+}
+
+#navlist li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  position: relative;
+}
+
+#navlist li a::after,
+#navlist::after {
+  content: "";
+  position: absolute;
+  background-color: #ed3ef7;
+  width: 100%;
+  height: 0.1rem;
+  left: 0;
+  bottom: -5px;
+  transform: scalex(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s;
+}
+
+#navlist li a:hover::after,
+#navlist .active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#left-container,
+#right-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#left-container {
+  background: #262525;
+  width: 70%;
+  padding-left: 3rem;
+}
+
+#right-container {
+  background: linear-gradient(-45deg, #ed3ef7, #262525 70%);
+  width: 30%;
+}
+
+#icon .fa-brands {
+  color: #bbb;
+  font-size: 1.7rem;
+}
+
+#icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#content {
+  margin-left: 3rem;
+}
+
+#content h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.name {
+  color: #ed3ef7;
+}
+
+#content h1 {
+  font-size: 4rem;
+  color: #ed3ef7;
+}
+
+.para {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+button {
+  border-radius: 8px;
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ed3ef7;
+  color: rgb(255, 244, 244);
+  cursor: pointer;
+}
+
+button:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.2);
+}
+
+#icon .fa-brands:hover {
+  cursor: pointer;
+  background: linear-gradient(#fff, #ed3ef750);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.design .circle {
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+  background: linear-gradient(90deg, transparent 50%, #262525 50%);
+  width: 38rem;
+}
+
+.circle:nth-child(2) {
+  background-image: url("myimage.jpeg");
+  width: 30rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  border: 0.1rem solid white;
+  box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #ed3ef750,
+    inset 0 0 2rem #ed3ef7, 0 0 4rem #ed3ef7, s inset 0 0 4rem #ed3ef7;
+}
+
+/*............................................................................*/
+
+#about {
+  background: #262525;
+  margin-top: 10px;
+}
+.header__aboutme {
+  margin-top: 64px;
+  font-size: 34px;
+  font-weight: normal;
+  padding-top: 30px;
+}
+.aboutme_paragraph {
+  font-size: 16px;
+}
+.header__aboutme {
+  text-align: center;
+  color: #ed3ef7;
+}
+.aboutme__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.left__fifty {
+  width: 50%;
+}
+.right__fifty {
+  width: 50%;
+}
+.about__me--image {
+  width: 100%;
+  max-width: 1100px;
+  padding: 74px;
+}
+.aboutme__content {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding-left: 20px;
+}
+.aboutme__paragraph {
+  min-width: 50%;
+  font-size: 24px;
+}
+/* .aboutme_link ol li{
+  display: flex;
+  flex-direction: column;
+} */
+.aboutme_link ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Space between items */
+  list-style-type: none; /* Remove default list style (optional) */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.aboutme_link ol :hover {
+  background-color: #262525;
+  color: #ed3ef7;
+  border: none;
+}
+
+.aboutme_link li {
+  padding: 10px;
+  width: 90px;
+  color: #fff;
+  background-color: #ed3ef7;
+  border: 1px solid #a1a1a1; /* Optional: Add border for clarity */
+  border-radius: 5px; /* Optional: Rounded corners */
+  text-align: center; /* Center text inside the list item */
+}
+
+/*..............................................................................*/
+
+hr {
+  margin-top: 30px;
+  width: 80%;
+  color: #ed3ef7;
+}
+
+#skill {
+  background: #262525;
+  margin-top: 10px;
+  max-height: 100%;
+}
+.header__skill {
+  margin-top: 64px;
+  font-size: 38px;
+  font-weight: normal;
+  padding-top: 30px;
+  text-align: center;
+  color: #ed3ef7;
+}
+.skill_right__fifty {
+  padding-right: 40px;
+
+  padding: 10px;
+}
+.skill__me--image {
+  padding: 32px;
+  width: 25%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.skill__content {
+  
+  max-width: 600px; 
+} */
+.skill__wrapper {
+  display: block;
+  flex-direction: column;
+}
+.skill__paragraph {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.skill_left_fifty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* align-items: center; Vertically center the image (optional) */
+  height: 100%; /* Ensure the parent has some height for alignment */
+  padding: 10px; /* Add padding around the container (optional) */
+}
+
+.skill_figure__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  width: 50%;
+}
+
+/*................................................................................*/
+#education {
+  background: #262525;
+}
+.span__design {
+  display: flex;
+}
+.education_content {
+  display: flex;
+  /* background-color: #ed3ef7; */
+}
+
+.eduacation_header {
+  margin-top: 64px;
+  font-size: 38px;
+  font-weight: normal;
+  padding-top: 30px;
+  text-align: center;
+  color: #ed3ef7;
+}
+
+.eduation_image img {
+  height: 90%;
+  display: flex;
+  width: 80%;
+  margin: 40px;
+  position: relative;
+}
+
+h3 h4 {
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+#contact {
+  background: #262525;
+}
+.contact__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+}
+label {
+  padding: 8px;
+  font-size: 20px;
+  color: white;
+}
+.form__input {
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid black;
+}
+.contact__image {
+  max-width: 70%;
+}
+.contact__figure--image {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
